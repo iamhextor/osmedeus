@@ -64,7 +64,7 @@ func InitConfig(options *libs.Options) error {
 
 		// set some default config if config file doesn't exist
 		v.SetDefault("Server", map[string]string{
-			"bind":        "0.0.0.0:8000",
+			"bind":        "0.0.0.0:9898",
 			"cors":        "*",
 			"secret":      secret,
 			"prefix":      prefix,
@@ -104,7 +104,7 @@ func InitConfig(options *libs.Options) error {
 			"username": "osmedeus",
 			"password": password,
 			"jwt":      "",
-			"dest":     "http://127.0.0.1:8000",
+			"dest":     "http://127.0.0.1:9898",
 		})
 
 		v.SetDefault("Environments", map[string]string{
