@@ -22,7 +22,7 @@ func init() {
 		RunE:  runServer,
 	}
 	serverCmd.Flags().String("host", "0.0.0.0", "IP address to bind the server")
-	serverCmd.Flags().String("port", "8000", "Port")
+	serverCmd.Flags().String("port", "9898", "Port")
 	serverCmd.Flags().IntVar(&options.Server.PollingTime, "poll-time", 60, "Polling time to check next task")
 	serverCmd.Flags().BoolVar(&options.Server.DisableSSL, "disable-ssl", false, "Disable workspaces directory listing")
 	serverCmd.Flags().BoolVar(&options.Server.DisableWorkspaceListing, "disable-listing", false, "Disable workspaces directtory listing")
