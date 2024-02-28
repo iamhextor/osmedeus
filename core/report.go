@@ -200,7 +200,7 @@ func ListSingleWorkspace(options libs.Options, target string) (content [][]strin
 
 func processReport(options libs.Options, reportPath string) string {
 	if options.Report.Static {
-		base := fmt.Sprintf("https://%s:8000/%s/workspaces", options.Report.PublicIP, options.Server.StaticPrefix)
+		base := fmt.Sprintf("https://%s:9898/%s/workspaces", options.Report.PublicIP, options.Server.StaticPrefix)
 		reportPath = strings.ReplaceAll(reportPath, options.Env.WorkspacesFolder, base)
 	}
 
